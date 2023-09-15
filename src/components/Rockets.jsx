@@ -20,8 +20,7 @@ function Rockets() {
             </div>
             <div className="text-container">
               <h2 className="name">{rocket.name}</h2>
-              <p className="description">{rocket.description}</p>
-              <Reserve key={rocket.id} rocketId={rocket.id} />
+              <Reserve key={rocket.id} rocketId={rocket.id} description={rocket.description} />
             </div>
           </div>
         ))
