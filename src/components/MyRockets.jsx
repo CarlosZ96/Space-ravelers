@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import '../stylesheets/myrocketStyles.css';
 
 function MyRockets() {
   const rockets = useSelector((state) => state.rockets.rockets);
@@ -11,12 +10,12 @@ function MyRockets() {
       <tbody>
         {reservedRockets.length > 0 ? (
           reservedRockets.map((rocket) => (
-            <tr key={rocket.id} className="name-profile">
-              {rocket.name}
+            <tr key={rocket.id} className="profileList">
+              <td>{rocket.name}</td>
             </tr>
           ))
         ) : (
-          <h3 className="name-profile">No Rockets reserved yet</h3>
+          <h3>No Rockets reserved yet</h3>
         )}
       </tbody>
     </table>

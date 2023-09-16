@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../redux/rockets/rocketSlice';
+import { useSelector } from 'react-redux';
 import '../stylesheets/rockets.css';
 import Reserve from './Reserves';
 
 function Rockets() {
-  const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets.rockets);
-  useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
   return (
     <div className="rockets-container">
       {

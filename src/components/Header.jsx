@@ -12,10 +12,10 @@ function Header() {
         </div>
         <nav>
           <div className="navItems">
-            <div><NavLink to="/rockets">Rocket</NavLink></div>
-            <div><NavLink to="/missions">Mission</NavLink></div>
+            <div><NavLink to="/rockets" className={({ isActive }) => (isActive ? 'active' : 'inActive')}>Rocket</NavLink></div>
+            <div><NavLink to="/missions" className={({ isActive }) => (isActive ? 'active' : 'inActive')}>Mission</NavLink></div>
             <div className="divider" />
-            <div><NavLink to="/profile">My Profile</NavLink></div>
+            <div><NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : 'inActive')}>My Profile</NavLink></div>
           </div>
         </nav>
       </div>

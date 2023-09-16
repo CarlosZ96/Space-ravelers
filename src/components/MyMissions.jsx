@@ -11,10 +11,10 @@ function MyMissions() {
     <table>
       <tbody>
         {
-              joinedMissions.length < 1 ? (<h2>No Missions Joined</h2>)
+              joinedMissions.length < 1 ? (<h3>No Missions Joined</h3>)
                 : joinedMissions.map((mission) => (
-                  <tr key={mission.mission_id}>
-                    {mission.mission_name}
+                  <tr key={mission.mission_id} className="profileList">
+                    <td>{mission.mission_name}</td>
                   </tr>
                 ))
             }
