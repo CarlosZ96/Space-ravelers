@@ -1,0 +1,29 @@
+.description-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hide {
+  display: none;
+}
+
+.reserved-button {
+  background-color: #00a6cc;
+  color: #fff;
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  font-size: medium;
+  margin-right: 5px;
+}
+
+.cancel-button {
+  height: 55px;
+  width: 20%;
+  font-size: large;
+  background-color: #fff;
+  border: solid 1px #000;
+  border-radius: 5px;
+  margin: 0;
+  margin-top: 20px;
+  color: grey;
+}
